@@ -62,10 +62,12 @@ ____
     
     
 #### 3. GET /api/transport/:id   Получение заявки по её номеру
+    ### Path parameters:
+    
+     id - номер заявки
+  
 
- ######  id - номер заявки
-   
-    Success Response:
+    ### Success Response:
      {
       "id":"string",
       "date":"string"
@@ -77,12 +79,13 @@ ____
      }
 
 #### 4. POST /api/transport/:id/update   Измнение заявки
-
- ######  id - номер заявки. 
+    ### Path parametres:
+	 id - номер заявки. 
  
- ######  Body parameters - всё что нужно для создания заявки
+    ### Body parameters:
+      Всё что нужно для создания заявки
    
-    Success Response:
+    ### Success Response:
 	  Все данные обновленной заявки
      {
       "id":"string",
@@ -96,11 +99,11 @@ ____
 
    
 #### 5. POST  /api/transport:id/delete Удаление заявки
-
-###### id - номер заявки
+    ### Path parametres:
+	 id - номер заявки. 
    
-   Success Response
-    HTTP Status 200 message:С кайфом удалил
+     ### Success Response
+      HTTP Status 200 message:С кайфом удалил
    
 ### Это все API, которые на данный момент реализованны.
 
