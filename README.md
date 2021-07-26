@@ -21,8 +21,8 @@ Transports
 1. GET /api/transport/ Получение всех заявок в аккаунте.
   
 2. POST /api/transport/generate Создание новой заявки.
-3.  
-  Body parameters, все параммерты типа string:
+ 
+  Body parameters, все параммерты типа string
   
     id - номер заявки,
     date - дата получения заявки
@@ -42,11 +42,13 @@ Transports
     "telephone":"string"
     "company":"string"
     "ati":"string"
-   }
+    }
     
     
 3. GET /api/transport/:id Получение заявки по её номеру
-  id - номер заявки
+
+   id - номер заявки
+   
   Success Response:
    {
     "id":"string",
@@ -57,10 +59,12 @@ Transports
     "company":"string"
     "ati":"string"
    }
-   
+
 4. POST /api/transport/:id/update Измнение заявки
-   id - номер заявки.
+
+   id - номер заявки. 
    Body parameters - всё что нужно для создания заявки
+   
    Success Response
     Все данные обновленной заявки
     {
@@ -74,7 +78,9 @@ Transports
    }
    
 5. POST  /api/transport:id/delete Удаление заявки
+
    id - номер заявки
+   
    Success Response
     HTTP Status 200 message:С кайфом удалил
    
