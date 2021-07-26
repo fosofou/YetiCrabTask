@@ -6,7 +6,7 @@ const router = Router();
 
 router.post('/generate',
 [
-  check('id').notEmpty(),
+  check('id').trim().notEmpty(),
   check('date').notEmpty(),
   check('name_carrier').notEmpty(),
   check('telephone').notEmpty(),
